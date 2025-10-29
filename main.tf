@@ -1,6 +1,6 @@
 resource "aws_instance" "jenkins" {
     ami = local.ami_id
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     vpc_security_group_ids = [aws_security_group.main.id]
     subnet_id = "subnet-0c070198bdb1776ce"
 
