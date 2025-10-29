@@ -10,7 +10,7 @@ resource "aws_instance" "jenkins" {
       volume_type = "gp3"  # or "gp2", depending on your preference
     }
 
-    user_data = file(jenkins.sh)
+    user_data = file("jenkins.sh")
     tags = merge(
         local.common_tags,
         {
@@ -32,7 +32,7 @@ resource "aws_instance" "jenkins-agent" {
       volume_type = "gp3"  # or "gp2", depending on your preference
     }
 
-    user_data = file(jenkins-agent.sh)
+    user_data = file("jenkins-agent.sh")
     tags = merge(
         local.common_tags,
         {
