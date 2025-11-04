@@ -43,7 +43,7 @@ Now Jenkins is ready to use.
 * Make sure roboshop namespace exist.
 * make sure EKS control plane allows Jenkins agent to connect on port 443 HTTPS.
 
-#### SonarQube Quality Gates
+## SonarQube Quality Gates
 
 🔴 Bugs What it means: Definite coding errors that will cause the program to behave incorrectly at runtime.
 
@@ -68,7 +68,7 @@ Security Rating = safety from attacks.
 Vulnerabilities = exploitable weaknesses.
 
 
-🚀 My SonarQube Implementation Journey
+#### 🚀 My SonarQube Implementation Journey
 
 When I joined the project, we had no SonarQube integration in place. Code quality, coverage, and vulnerabilities were not being measured at all. I was assigned the responsibility of onboarding all project components into SonarQube and ensuring developers adopted the tool effectively.
 
